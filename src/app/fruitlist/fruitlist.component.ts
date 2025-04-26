@@ -9,9 +9,7 @@ import { SinglefruitComponent } from './singlefruit/singlefruit.component';
   styleUrl: './fruitlist.component.scss'
 })
 export class FruitlistComponent {
-  howItWorks = 'not bad';
-  fontColorGood = 'green';
-  fontColorBad = 'red';
+
 
   fruitlist = [
     {
@@ -63,4 +61,8 @@ export class FruitlistComponent {
       reviews:[{name: "Kevin W.", text: "Ganz gut in der Regel!"},{name: "Oliver J.", text: "Absoluter Favorit beim Frühstück"}],
     },
   ]
+
+  nameLog(name:string){
+    console.log(name);
+  }
 }
